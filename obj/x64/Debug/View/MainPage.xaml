@@ -1,0 +1,133 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DelayLoopGenerator"
+    xmlns:viewmodels="using:DelayLoopGenerator.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    x:Class="DelayLoopGenerator.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.DataContext>
+        <viewmodels:MainViewModel/>
+    </Page.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <muxc:MenuBar x:ConnectionId='2' x:Name="menuBar" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="40">
+            <muxc:MenuBarItem x:ConnectionId='15' x:Name="menu1" Title="File" FontSize="40">
+                <MenuFlyoutSubItem Text="New">
+                    <MenuFlyoutItem Text="Plain Text Document"/>
+                    <MenuFlyoutItem Text="Rich Text Document"/>
+                    <MenuFlyoutItem Text="Other Formats..."/>
+                </MenuFlyoutSubItem>
+                <MenuFlyoutItem Text="Open..."/>
+                <MenuFlyoutItem Text="Save"/>
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem Text="Exit"/>
+            </muxc:MenuBarItem>
+            <muxc:MenuBarItem x:ConnectionId='16' x:Name="menu2" Title="Help" FontSize="40">
+                <MenuFlyoutItem Text="About"/>
+            </muxc:MenuBarItem>
+        </muxc:MenuBar>
+        <muxc:Button x:ConnectionId='3' Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Width="62" Height="32"                     >
+            <muxc:Button.FocusVisualPrimaryBrush>
+                <muxc:ImageBrush ImageSource="/Assets/czechFlag.png"/>
+            </muxc:Button.FocusVisualPrimaryBrush>
+            <muxc:Button.BorderBrush>
+                <muxc:ImageBrush ImageSource="/Assets/czechFlag.png"/>
+            </muxc:Button.BorderBrush>
+            <muxc:Button.Background>
+                <muxc:ImageBrush ImageSource="/Assets/czechFlag.png" />
+            </muxc:Button.Background>
+        </muxc:Button>
+        <muxc:Button x:ConnectionId='4' Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="62" Height="32"                       >
+            <muxc:Button.Background>
+                <muxc:ImageBrush ImageSource="/Assets/americanFlag.jpg"/>
+            </muxc:Button.Background>
+        </muxc:Button>
+        <muxc:Button Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Center" Width="50" Height="40">
+            <muxc:Button.Background>
+                <muxc:ImageBrush ImageSource="/Assets/saveIcon.png" Stretch="Fill"/>
+            </muxc:Button.Background>
+        </muxc:Button>
+        <muxc:Button Grid.Row="1" Grid.Column="3" Content="" HorizontalAlignment="Center" Width="60" Height="50">
+            <muxc:Button.Background>
+                <muxc:ImageBrush ImageSource="/Assets/copyIcon.png"/>
+            </muxc:Button.Background>
+        </muxc:Button>
+        <muxc:Button Grid.Row="1" Grid.Column="5" Content="Button" HorizontalAlignment="Center"/>
+        <muxc:Button Grid.Row="1" Grid.Column="6" Content="Button" HorizontalAlignment="Center"/>
+        <muxc:ComboBox Grid.Row="1" ItemsSource="{Binding firstRegistry}"  Grid.Column="8" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120"/>
+        <muxc:ComboBox Grid.Row="1" ItemsSource="{Binding secondRegistry}"  Grid.Column="9" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120"/>
+        <muxc:ComboBox Grid.Row="1" ItemsSource="{Binding thirdRegistry}"  Grid.Column="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120"/>
+        <muxc:TextBlock x:ConnectionId='5' x:Name="userInput" Grid.Row="2" Grid.ColumnSpan="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="User input" TextWrapping="Wrap" Margin="10,0,0,0"/>
+        <muxc:TextBlock x:ConnectionId='6'  x:Name="asmSource" Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="Generated ASM source:" TextWrapping="Wrap" Margin="10,0,0,0"/>
+        <muxc:TextBlock x:ConnectionId='7'  x:Name="firstText" Grid.Row="3" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="1. Decide wether to input: " TextWrapping="Wrap" Margin="10,0,0,0"/>
+        <muxc:RadioButton x:ConnectionId='8' x:Name="cyclesRadionButton" Grid.Row="4"  Grid.ColumnSpan="2" Margin="10,0,0,0" Content="Cycles:"/>
+        <muxc:TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Text="24000000" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="68" Height="32"/>
+        <muxc:Button Grid.Row="4" Grid.Column="3" Content="+" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="32" Margin="2,0,0,0"/>
+        <muxc:Button Grid.Row="4" Grid.Column="3" Content="-" HorizontalAlignment="Right" VerticalAlignment="Center" Width="30"/>
+        <muxc:RadioButton x:ConnectionId='9' x:Name="timeCyclesRadioButton" Grid.Row="5"  Grid.ColumnSpan="3" Margin="10,0,0,0" Content="Time and cycle rate: "/>
+        <muxc:TextBlock x:ConnectionId='10' x:Name="timeText" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="Time/sec: " TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <muxc:TextBlock x:ConnectionId='11' x:Name="cycleRate" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="Cycle rate: " TextWrapping="Wrap"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <muxc:TextBox Text="{Binding timeValue}" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" HorizontalAlignment="right" VerticalAlignment="Center" Width="100" Height="32"/>
+        <muxc:TextBlock Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="sec." TextWrapping="Wrap"  HorizontalAlignment="center" VerticalAlignment="Center"/>
+        <muxc:ComboBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100"/>
+        <muxc:TextBlock Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="MHz" TextWrapping="Wrap"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <muxc:TextBlock x:ConnectionId='12' x:Name="secondText" Grid.Row="8" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="2. Click on GO-Button: " TextWrapping="Wrap" Margin="10,0,0,0"/>
+        <muxc:Button Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" Content="GO" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+        <muxc:TextBlock x:ConnectionId='13' x:Name="thirdText" Grid.Row="10" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="3. Save the source code: " TextWrapping="Wrap" Margin="10,0,0,0"/>
+        <muxc:Button Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" Width="50" Height="40">
+            <muxc:Button.Background>
+                <muxc:ImageBrush ImageSource="/Assets/saveIcon.png" Stretch="Fill"/>
+            </muxc:Button.Background>
+        </muxc:Button>
+        <muxc:TextBlock x:ConnectionId='14' x:Name="fourthText" Grid.Row="12" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="4. Copy for Copy/Paste: " TextWrapping="Wrap" Margin="10,0,0,0"/>
+        <muxc:Button Grid.Row="13" Grid.Column="0"  Grid.ColumnSpan="3" HorizontalAlignment="Center" Width="60" Height="50">
+            <muxc:Button.Background>
+                <muxc:ImageBrush ImageSource="/Assets/copyIcon.png"/>
+            </muxc:Button.Background>
+        </muxc:Button>
+        <muxc:TextBox Grid.Row="3" Grid.RowSpan="10" Grid.Column="8" Grid.ColumnSpan="3" Text="TextBox" TextWrapping="Wrap"/>
+
+
+
+
+
+    </Grid>
+</Page>
+
