@@ -96,16 +96,16 @@
         <muxc:TextBlock x:Name="userInput" Grid.Row="2" Grid.ColumnSpan="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="User input" TextWrapping="Wrap" Margin="10,0,0,0"/>
         <muxc:TextBlock  x:Name="asmSource" Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="Generated ASM source:" TextWrapping="Wrap" Margin="10,0,0,0"/>
         <muxc:TextBlock  x:Name="firstText" Grid.Row="3" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="1. Decide wether to input: " TextWrapping="Wrap" Margin="10,0,0,0"/>
-        <muxc:RadioButton x:Name="cyclesRadionButton" Grid.Row="4"  Grid.ColumnSpan="2" Margin="10,0,0,0" Content="Cycles:"/>
-        <muxc:TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Text="24000000" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="68" Height="32"/>
+        <muxc:RadioButton x:Name="cyclesRadionButton" IsChecked="{Binding CyclesRadioButton}" Grid.Row="4"  Grid.ColumnSpan="2" Margin="10,0,0,0" Content="Cycles:"/>
+        <muxc:TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" IsEnabled="{Binding IsChecked, ElementName=cyclesRadionButton}" Text="{Binding Cycles}" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Width="68" Height="32"/>
         <muxc:Button Grid.Row="4" Grid.Column="3" Content="+" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="32" Margin="2,0,0,0"/>
         <muxc:Button Grid.Row="4" Grid.Column="3" Content="-" HorizontalAlignment="Right" VerticalAlignment="Center" Width="30"/>
-        <muxc:RadioButton x:Name="timeCyclesRadioButton" Grid.Row="5"  Grid.ColumnSpan="3" Margin="10,0,0,0" Content="Time and cycle rate: "/>
+        <muxc:RadioButton x:Name="timeCyclesRadioButton" IsChecked="{Binding TimeRadioButton}" Grid.Row="5"  Grid.ColumnSpan="3" Margin="10,0,0,0" Content="Time and cycle rate: "/>
         <muxc:TextBlock x:Name="timeText" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="Time/sec: " TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <muxc:TextBlock x:Name="cycleRate" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="Cycle rate: " TextWrapping="Wrap"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <muxc:TextBox Text="{Binding timeValue}" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" HorizontalAlignment="right" VerticalAlignment="Center" Width="100" Height="32"/>
+        <muxc:TextBox Text="{Binding Time}" IsEnabled="{Binding IsChecked, ElementName=timeCyclesRadioButton}" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" HorizontalAlignment="right" VerticalAlignment="Center" Width="100" Height="32"/>
         <muxc:TextBlock Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="sec." TextWrapping="Wrap"  HorizontalAlignment="center" VerticalAlignment="Center"/>
-        <muxc:ComboBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100"/>
+        <muxc:TextBox Text="{Binding CycleRate}" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="{Binding IsChecked, ElementName=timeCyclesRadioButton}" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100"/>
         <muxc:TextBlock Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Margin="35,0,0,0" Text="MHz" TextWrapping="Wrap"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <muxc:TextBlock x:Name="secondText" Grid.Row="8" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Text="2. Click on GO-Button: " TextWrapping="Wrap" Margin="10,0,0,0"/>
         <muxc:Button Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" Content="GO" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -122,7 +122,7 @@
                 <muxc:ImageBrush ImageSource="/Assets/copyIcon.png"/>
             </muxc:Button.Background>
         </muxc:Button>
-        <muxc:TextBox Grid.Row="3" Grid.RowSpan="10" Grid.Column="8" Grid.ColumnSpan="3" Text="TextBox" TextWrapping="Wrap"/>
+        <muxc:TextBox Text="{Binding Text, Mode=TwoWay}" Grid.Row="3" Grid.RowSpan="10" Grid.Column="8" Grid.ColumnSpan="3" TextWrapping="Wrap"/>
 
 
 

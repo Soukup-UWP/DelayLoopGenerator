@@ -9,11 +9,15 @@ namespace DelayLoopGenerator.ViewModel
     
     class MainViewModel
     {
+        public int Cycles { get; set; }
+        public int Time { get; set; }
+        public int CycleRate { get; set; }
+        public bool CyclesRadioButton { get; set; }
+        public bool TimeRadioButton { get; set; }
+        public string Text { get; set; }
         public List<string> firstRegistry { get; set; }
         public List<string> secondRegistry { get; set; }
         public List<string> thirdRegistry { get; set; }
-
-        public string timeValue { get; set; }
         public MainViewModel()
         {
             firstRegistry = new List<string>()

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-19T07:08:34.912</Modified>
+      <Modified>2020-02-26T15:34:03.968</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\DelayLoopGenerator.exe">
       <PackagePath>entrypoint\DelayLoopGenerator.exe</PackagePath>
-      <Modified>2020-02-19T07:08:32.916</Modified>
+      <Modified>2020-02-26T15:34:02.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -104,69 +104,69 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\americanFlag.jpg">
       <PackagePath>Assets\americanFlag.jpg</PackagePath>
-      <Modified>2020-02-18T18:21:14.350</Modified>
+      <Modified>2020-02-26T15:19:18.196</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\copyIcon.png">
       <PackagePath>Assets\copyIcon.png</PackagePath>
-      <Modified>2020-02-18T19:23:24.352</Modified>
+      <Modified>2020-02-26T15:19:18.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\czechFlag.png">
       <PackagePath>Assets\czechFlag.png</PackagePath>
-      <Modified>2020-02-18T18:07:40.428</Modified>
+      <Modified>2020-02-26T15:19:18.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\saveIcon.png">
       <PackagePath>Assets\saveIcon.png</PackagePath>
-      <Modified>2020-02-18T19:20:23.905</Modified>
+      <Modified>2020-02-26T15:19:18.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-13T11:36:26.580</Modified>
+      <Modified>2020-02-26T15:19:18.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-02-18T16:44:36.167</Modified>
+      <Modified>2020-02-26T15:19:18.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\DelayLoopGenerator.xr.xml">
       <PackagePath>DelayLoopGenerator.xr.xml</PackagePath>
-      <Modified>2020-02-19T07:08:32.666</Modified>
+      <Modified>2020-02-26T15:33:22.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-19T07:08:32.681</Modified>
+      <Modified>2020-02-26T15:25:17.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-02-19T07:08:32.681</Modified>
+      <Modified>2020-02-26T15:34:01.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -174,11 +174,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-18T19:29:56.513</Modified>
+      <Modified>2020-02-26T15:20:23.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\josep\OneDrive\Desktop\DelayLoopGenerator\bin\x64\Debug\Core\DelayLoopGenerator.exe">
       <PackagePath>DelayLoopGenerator.exe</PackagePath>
-      <Modified>2020-02-19T07:08:34.881</Modified>
+      <Modified>2020-02-26T15:34:03.963</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
